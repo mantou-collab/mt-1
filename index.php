@@ -1,6 +1,6 @@
 <?php
 // 配置目标域名（请修改为实际域名）
-$targetDomain = 'http://api.example.com';
+$targetDomain = 'https://th.duanju55.top';
 
 // 读取路由配置
 $routes = @file('api.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
