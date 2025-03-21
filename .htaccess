@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # 排除真实存在的文件或目录
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # 将所有请求重写到 index.php
+    RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>
